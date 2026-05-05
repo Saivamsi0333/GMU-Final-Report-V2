@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyzing the Digital Transformation of University Admissions</title>
+    <style>
+        :root { --gmu-green: #006633; --gmu-gold: #FFCC00; --text-dark: #2c3e50; }
+        body { font-family: 'Segoe UI', 'Times New Roman', Times, serif; line-height: 1.6; color: #111; max-width: 950px; margin: 0 auto; padding: 40px; background-color: #fdfdfd; }
+        
+        /* Navigation & Buttons */
+        .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--gmu-gold); padding-bottom: 10px; }
+        .print-btn { background-color: var(--gmu-green); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 11pt; transition: 0.3s; }
+        .print-btn:hover { background-color: #004d26; }
+        
+        h1 { color: var(--gmu-green); font-size: 24pt; text-align: center; margin-bottom: 15px; }
+        h2 { color: var(--gmu-green); font-size: 18pt; border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 45px; }
+        h3 { color: var(--text-dark); font-size: 14pt; margin-top: 25px; }
+        p { text-align: justify; margin-bottom: 15px; font-size: 12pt; }
+        ul { margin-bottom: 15px; font-size: 12pt; }
+        li { margin-bottom: 10px; }
+        
+        .author-box { text-align: center; margin: 20px 0 40px 0; font-size: 12pt; line-height: 1.8; padding: 20px; background: #f4f8f4; border-radius: 8px; border: 1px solid #d9ebd9; }
+        .img-container { text-align: center; margin: 35px 0; }
+        .img-container img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .caption { font-size: 11pt; font-style: italic; color: #555; margin-top: 10px; }
+        
+        /* IPO Diagram CSS */
+        .ipo-diagram { display: flex; justify-content: space-between; align-items: center; margin: 40px 0; background: #f9f9f9; padding: 20px; border-radius: 8px; border: 1px solid #ddd; }
+        .ipo-box { flex: 1; text-align: center; padding: 20px; border: 2px solid #ccc; border-radius: 8px; background: white; font-size: 11pt; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .ipo-arrow { font-size: 24pt; color: var(--gmu-green); margin: 0 15px; }
+        .ipo-process { border-color: #00A1E0; background: #e6f7ff; }
+        .ipo-output { border-color: var(--gmu-green); background: #e6ffe6; }
+
+        table { width: 100%; border-collapse: collapse; margin: 30px 0; font-family: 'Segoe UI', sans-serif; font-size: 11.5pt; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        th, td { border: 1px solid #ccc; padding: 14px; text-align: left; }
+        th { background-color: var(--gmu-green); color: white; font-weight: 600; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        
+        /* APA Formatting */
+        .references { margin-top: 50px; }
+        .ref-item { padding-left: 36px; text-indent: -36px; margin-bottom: 12px; font-size: 11pt; }
+
+        /* Print Optimization Rule */
+        @media print {
+            body { padding: 0; background-color: white; }
+            .top-bar, .print-btn { display: none; }
+            .author-box, .ipo-diagram { border: 1px solid #000; }
+            h2 { page-break-after: avoid; }
+            table, img { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <span style="font-weight: bold; color: var(--gmu-green);">George Mason University Case Study</span>
+        <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <h1>Analyzing the Digital Transformation of University Admissions:<br>A Case Study of the Patriot Connect CRM Transition</h1>
+
+    <div class="author-box">
+        <strong>Student:</strong> Saivamsi Nimmagadda<br>
+        <strong>University:</strong> The Catholic University of America<br>
+        <strong>Course:</strong> Introduction to Information Systems<br>
+        <strong>Instructor:</strong> Dr. Sang Hoo Oh
+    </div>
+
+    <h2>Description of the Organization and Information System</h2>
+    
+    <div class="img-container">
+        <img src="https://www.gmu.edu/sites/default/files/styles/feature_image_medium/public/2023-04/mason%20pond%20spring%2016x9%20230330002.jpg" alt="George Mason University Campus">
+        <div class="caption">Figure 1: George Mason University Campus - Fostering an innovative and inclusive academic community.</div>
+    </div>
+
+    <h3>1.1 Institutional Context and Strategic Mission Alignment</h3>
+    <p>George Mason University (GMU) is the largest publicly funded research university in the Commonwealth of Virginia. With an underlying mission of nurturing an innovative, diverse, and inclusive academic community, GMU manages tens of thousands of enrolled students and an exponentially larger number of inquiries each year by potential applicants (George Mason University, n.d.). Since information technology has become a vital part of the overall education system, the ability to accomplish such a mission is directly dependent upon the Information System (IS) architecture of the organization.</p>
+    <p>The Information System of Record used by the university must function as more than a digital filing cabinet. It should enable a smooth, individualized, and highly responsive experience for all potential students. Digital friction is created when enterprise technology is disconnected. As such, the transition of GMU to the Patriot Connect CRM is a strategic organizational alignment of technology to the core values of innovation and accessibility.</p>
+
+    <h3>1.2 The Evolution of the "Silo Effect" in the Legacy Environment</h3>
+    <p>To clearly understand the need for this digital transformation, it is essential to examine the legacy environment. The university relied heavily on TargetX as its main tool for managing admissions since 2017. As the technological ecosystem surrounding the university expanded, TargetX became a functioning silo.</p>
+    <p>In the case of GMU, the TargetX legacy environment created three critical operational bottlenecks:</p>
+    <ul>
+        <li><strong>Severe Data Fragmentation:</strong> Prospective student data captured in TargetX did not automatically flow to other important university services, such as Financial Aid or the Registrar's Office.</li>
+        <li><strong>Burden of Manual Reconciling:</strong> Admissions counselors and IT staff had to perform manual “batch syncs" to transfer data between the CRM and the core Student Information System (SIS), the Banner Database, introducing high latency and a high risk of human error.</li>
+        <li><strong>Technical Obsolescence:</strong> The isolated architecture of the TargetX system prevented GMU from implementing modern, automated outreach strategies based on particular student behaviors.</li>
+    </ul>
+
+    <h3>1.3 The Solution: Patriot Connect and Cloud-Based Architecture</h3>
+    <p>To break down these functional silos, GMU IT leadership embarked on a "Salesforce-first" strategy, transforming the university toward a single, cloud-based "System of Engagement." The resulting architecture, called Patriot Connect, is natively constructed on the Salesforce Education Cloud platform (Salesforce, 2026).</p>
+    
+    <div class="img-container">
+        <img src="https://a.sfdcstatic.com/shared/images/c360-nav/salesforce-with-type-logo.svg" style="background-color: #00A1E0; padding: 20px; width: 300px;" alt="Salesforce Education Cloud">
+        <div class="caption">Figure 2: Salesforce Education Cloud powers the Patriot Connect architecture.</div>
+    </div>
+
+    <p>The main characteristics of this new architecture are an <strong>Omnichannel Engagement Hub</strong> providing a 360-degree student view, <strong>Mobile-First Applicant Portals</strong>, and <strong>Automated Logic and Workflows</strong> that trigger personalized communications without manual staff intervention.</p>
+
+    <h3>1.4 Research Methodology</h3>
+    <p>To ensure a comprehensive analysis, this study utilized a multi-method research approach. Data was gathered and synthesized from official university documentation, including the George Mason University IT Strategic Plan 2021-2025, the Patriot Connect program planning blueprints, and the Assistive Technology Initiative's accessibility mandates (George Mason University Information Technology, 2025). This triangulated research approach allowed for a holistic evaluation of both technical frameworks and organizational readiness.</p>
+
+    <h2>Evaluation of the Information System</h2>
+
+    <h3>2.1 Systems Analysis: Data Architecture and API Integration</h3>
+    <p>The Systems Analysis framework reveals a fundamental paradigm shift in GMU's data architecture, moving away from isolated silos toward a highly integrated <strong>Input-Process-Output (IPO)</strong> model.</p>
+    
+    <div class="ipo-diagram">
+        <div class="ipo-box"><strong>INPUT</strong><br><br>Omnichannel Data Capture (Web Portals, Social Media, Events)</div>
+        <div class="ipo-arrow">&#10142;</div>
+        <div class="ipo-box ipo-process"><strong>PROCESS</strong><br><br>Salesforce Engagement Layer (Automated Workflows & Routing)</div>
+        <div class="ipo-arrow">&#10142;</div>
+        <div class="ipo-box ipo-output"><strong>OUTPUT</strong><br><br>API Sync to Banner SIS (FERPA Compliant Record Integrity)</div>
+    </div>
+
+    <p><strong>System Integrity and Cloud Security (The API Advantage):</strong> The most critical system upgrade relates to the output stage. Patriot Connect ensures enterprise record integrity through real-time Application Programming Interface (API) synchronization. When an admission decision is captured, the API automatically and securely transfers that data to the Banner Database. This enforces rigorous Data Integrity and Cloud Security by utilizing encrypted protocols to strictly maintain compliance with FERPA regulations.</p>
+
+    <h3>2.2 Human-Computer Interaction (HCI): User Experience and Inclusivity</h3>
+    <p>An information system is only as successful as its interface. Patriot Connect addresses two core HCI priorities:</p>
+    <p><strong>Accessibility Standards (WCAG 2.1 AA):</strong> An essential HCI requirement of the Patriot Connect transition is mandatory compliance with Web Content Accessibility Guidelines (WCAG) 2.1 AA. This ensures visually, auditorily, or cognitively impaired staff and students can navigate the system seamlessly by the April 24, 2026 deadline (George Mason University Assistive Technology Initiative, 2026).</p>
+    <p><strong>Cognitive Load Theory and UI Optimization:</strong> Admissions counselors using TargetX experienced severe click-fatigue. The new system counters this by introducing a "single-pane-of-glass" dashboard design. By combining disparate data points into an integrated profile, the system dramatically decreases cognitive load, allowing staff to redirect their mental capacity to high-value, empathetic student advising.</p>
+
+    <h3>2.3 System Evaluation Summary</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Architectural Element</th>
+                <th>TargetX (Legacy Environment)</th>
+                <th>Patriot Connect (Salesforce Cloud)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Data Synchronization</strong></td>
+                <td>High-latency manual batch processing.</td>
+                <td>Real-time, encrypted API integration.</td>
+            </tr>
+            <tr>
+                <td><strong>Interface Design</strong></td>
+                <td>Fragmented navigation; high cognitive load.</td>
+                <td>Unified dashboard; single-pane-of-glass.</td>
+            </tr>
+            <tr>
+                <td><strong>Accessibility Compliance</strong></td>
+                <td>Inconsistent; barriers for impaired users.</td>
+                <td>Strict WCAG 2.1 AA mandated compliance.</td>
+            </tr>
+            <tr>
+                <td><strong>System Role</strong></td>
+                <td>Isolated storage repository (Silo).</td>
+                <td>Enterprise-wide active Engagement Hub.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Critical Analysis and Strategic Recommendations</h2>
+
+    <h3>3.1 The 80/20 Implementation Reality and Shadow IT</h3>
+    <p>A key lesson identified in this case study is that the software architecture constitutes only 20% of the overall solution. The other 80% rests on human-centered transition management and cultural buy-in from the admissions department. When technical implementation proceeds faster than staff expertise, users bypass the platform in favor of familiar, unmonitored tools—a dangerous phenomenon known as <strong>"Shadow IT."</strong> If counselors track student interactions on personal spreadsheets, the "single source of truth" is undermined, creating gigantic data security vulnerabilities.</p>
+
+    <h3>3.2 Strategic Recommendations for System Optimization</h3>
+    <p>To mitigate human-implementation risks during the Wave 1.5 rollout, GMU must prioritize the following recommendations (George Mason University, 2026):</p>
+    <ul>
+        <li><strong>Establish a "Change Champions" Network:</strong> Identify early adopters and departmental super-users to provide localized, peer-level support in the first 90 days.</li>
+        <li><strong>Expand "Sandbox" Immersion Environments:</strong> Provide prolonged access to isolated testing environments before the June launch, enabling users to develop operational muscle memory safely.</li>
+        <li><strong>Proactive UI Customization:</strong> Streamline User Interface (UI) workflows to automatically flag inquiries made by at-risk students to prevent counselor fatigue.</li>
+        <li><strong>Continuous Post-Launch Auditing (Agile Methodology):</strong> Set up continuous feedback loops to refine the HCI experience based on observed staff behaviors after launch.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>The move to the Patriot Connect CRM is a high-stakes milestone in the overall digital transformation plan of George Mason University. As shown in the Systems Analysis framework, automated, real-time API synchronization will ensure unprecedented data accuracy. Moreover, the appraisal of the system using the Human-Computer Interaction (HCI) model confirms that the new interface is fundamentally user-friendly and inclusive.</p>
+    <p>Nevertheless, a critical analysis demonstrates that the final success of this transition is wholly dependent on human-centered change management. By acknowledging the 80/20 implementation reality and deploying experiential Sandbox training and Change Champions, GMU can successfully navigate the aggressive June 2026 rollout timeline. Ultimately, Patriot Connect offers the technological agility necessary to scale global admissions while maintaining a highly individualized, supportive prospective student experience.</p>
+
+    <div class="references">
+        <h2>References</h2>
+        <div class="ref-item">George Mason University. (n.d.). <em>Mission and values</em>. Retrieved from https://www.gmu.edu/about-mason/mission-and-values</div>
+        <div class="ref-item">George Mason University. (2026). <em>Patriot connect program planning</em>. George Mason University.</div>
+        <div class="ref-item">George Mason University Assistive Technology Initiative. (2026). <em>Digital content accessibility guidelines</em>. George Mason University.</div>
+        <div class="ref-item">George Mason University Information Technology. (2025). <em>IT strategic plan 2021-2025</em>. George Mason University.</div>
+        <div class="ref-item">Salesforce. (2026). <em>Salesforce Education Cloud for higher education</em>. Retrieved from https://www.salesforce.com/edcloud</div>
+    </div>
+
+</body>
+</html>
